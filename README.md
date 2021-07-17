@@ -87,6 +87,6 @@ class SpecialPolygon:
             ratiodict[i]=temp.area/temp.perimeter
         return max(ratiodict.values())
 ```
-This class takes in two values at initialisation. The purpose of the class is to return the highest area:perimeter ratio and this is done by the highest_ratios function. It stores the ratios in a dict which is a sequence type. It returns the dictionary key of the highest area:perimeter ratio. The getitem function takes in an integer and returns the area:perimeter ratio for the vertex if it is less than the MaxVertex and greater than 3.
+This class takes in two values at initialisation. The purpose of the class is to return the highest area:perimeter ratio and this is done by the highest_ratios function. It stores the ratios in a dict which is a sequence type. It returns the dictionary key of the highest area:perimeter ratio. The getitem function takes in an integer and returns the area:perimeter ratio for the vertex if it is less than the MaxVertex and greater than 3. This function also has the length function which returns the integer of maxvertices - 2
 <br>
 Note- Vertex has to be greater than or equal to three since a Polygon with less than 3 sides is a 1D shape since it never gets closed.
