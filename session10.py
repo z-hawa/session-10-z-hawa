@@ -6,7 +6,7 @@ class RegPolygon:
     def __init__(self,vertices:int,circumradius:Union[float,int]):
         '''Initialise all properties here'''
         if isinstance(vertices,int):
-            if vertices<2:
+            if vertices<3:
                 raise ValueError("Vertex for a polygon cannot be less than 3!")
         else:
             raise TypeError
@@ -35,10 +35,6 @@ class RegPolygon:
             return self.edges>o.edges
         else:
             return False
-
-
-Polygon1=RegPolygon(3,4)
-print(Polygon1.perimeter,Polygon1.circumradius,Polygon1.edgelength,Polygon1.interiorangle,Polygon1.edges,Polygon1.apothem,RegPolygon(2,3)>Polygon1,sep="\n")
 
         
 
